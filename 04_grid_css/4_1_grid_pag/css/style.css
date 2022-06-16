@@ -1,0 +1,95 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: blueviolet;
+    height: 10vh;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;    
+}
+
+header nav{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+header nav a{
+    color: black;
+    font-size: 2px;
+    text-decoration: none;    
+}
+
+main{
+    background-color: cyan;
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll; 
+    width: 100%;
+    height: 80vh;    
+}
+
+aside{
+    /*float: right;*/
+    height: 80vh;
+    width: 15%;
+    background-color: deeppink;
+}
+
+aside nav{
+    display: flex;
+    flex-direction: column;    
+}
+
+aside nav a{
+    border-bottom: 1px #000 solid;
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: 
+        ". . ."
+        ". . ."
+        ". . .";
+    height: 80vh;
+    width: 85%;
+}
+
+section article{
+    background-color: azure;
+    margin: 5px;
+    padding: 5px;
+    height: 200px;       
+}
+
+footer{
+    display: flex;
+    background-color: darkmagenta;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: center;
+    width: 100%;
+}
+
+footerp{
+    margin: 0px;    
+}
