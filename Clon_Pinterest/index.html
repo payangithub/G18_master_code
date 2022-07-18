@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clon Pinterest</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="https://s.pinimg.com/webapp/favicon-54a5b2af.png">
+  <script type="text/javascript" src="js/script.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="container2">
+        <div class="img-logo">
+          <!--Icono Pinterest-->
+          <img class="" src="https://s.pinimg.com/webapp/favicon-54a5b2af.png" alt="Pinterest">
+        </div>
+        <div class="link">
+          <a class="link-active" href="#">
+            Inicio
+          </a>
+        </div>
+        <div class="link">
+          <a href="#">
+            Hoy
+          </a>
+        </div>
+        <div class="link">
+          <a href="#">
+            Siguiendo
+          </a>
+        </div>
+        <!-- Buscador Pinterest -->
+        <div id="search">
+          <input id="search-box" type="text" placeholder="&#x1F50D; Buscar" />                                              
+        </div>
+        <!-- Icono de Notificacion -->
+        <div class="icon-header">
+          <svg class="icon" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true" aria-label="" role="img">
+            <path
+              d="M12 24c-1.66 0-3-1.34-3-3h6c0 1.66-1.34 3-3 3zm7-10.83c1.58 1.52 2.67 3.55 3 5.83H2c.33-2.28 1.42-4.31 3-5.83V7c0-3.87 3.13-7 7-7s7 3.13 7 7v6.17z">
+            </path>
+          </svg>
+        </div>
+        
+        <!-- Icono Mensajes  -->
+        <div class="icon-header">
+          <svg class="icon" height="24" width="24" viewBox="0 0 24 24" aria-hidden="true" aria-label="" role="img">
+            <path
+              d="M18 12.5a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 18 12.5m-6 0a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 12 12.5m-6 0a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 6 12.5M12 0C5.925 0 1 4.925 1 11c0 2.653.94 5.086 2.504 6.986L2 24l5.336-3.049A10.93 10.93 0 0 0 12 22c6.075 0 11-4.925 11-11S18.075 0 12 0">
+            </path>
+          </svg>
+        </div>
+        <!-- Icono Gmail -->
+        <div class="icon-header">
+          <button class="btn btn-secondary mt-n1" style="border-radius: 20px;background: #ededed;color: black;font-weight: bold;border: aliceblue;">G</button>
+        </div>
+
+        <!-- Pestaña de login -->
+        <ul class="nav navbar-nav navbar-right mt-3" >
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">              
+            </a>
+
+            <div class="dropdown-menu text-center" style="width: 300px;margin-left:-122px">              
+              <h5 class="text-left ml-2" style="font-size: 12px;">Actualmente en </h5>
+              <div class="card w-100 mx-0 my-0" style="height: 80px;border: transparent;">
+                <div class="row">
+                  <div class="w-25 text-center text-bold">                    
+                    <button class="btn btn-secondary" style="margin-top: 30%;border-radius: 20px;background: #ededed;color: black;font-weight: bold;border: aliceblue;">G</button>
+                  </div>
+                  <div class="w-75 text-left" >
+                    <h5 class="text-bold">Guadalupe Payan</h5>
+                    <span style="font-size: 14px;">Personal</span><br>
+                    <span style="font-size: 14px;">payangpe1985@gmail.com</span>                    
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="text-left ml-2 mt-4" style="font-size: 12px;">Tus cuentas </h5>
+              <div class="card w-100 mx-0 my-0" style="height: 80px;border: transparent;">
+                <div class="row ml-3">                 
+                  <div class="w-100 text-left">
+                    <h5 class="text-bold" style="font-size: 18px;">Agregar cuenta</h5>
+                    <h5 class="text-bold" style="font-size: 18px;">Convertir en cuenta para empresa</h5>                                         
+                  </div>
+                </div>
+              </div>
+              
+              <h5 class="text-left ml-2 mt-4" style="font-size: 12px;">Mas opciones</h5>
+              <div class="card w-100 mx-0 my-1" style="height: 150px;border: transparent;">
+                <div class="row ml-3">                 
+                  <div class="w-100 text-left">
+                    <h5 class="text-bold" style="font-size: 18px;">Configuracion</h5>
+                    <h5 class="text-bold" style="font-size: 18px;">Mejora tu feed de inicio</h5>
+                    <h5 class="text-bold" style="font-size: 18px;">Instalar la aplicacion de Windows</h5>
+                    <h5 class="text-bold" style="font-size: 18px;">Obtener ayuda</h5>              
+                    <h5 class="text-bold">Salir</h5>                                  
+                  </div>
+                </div>
+              </div>                                                      
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="wrapper-card" id="principal-cards">
+    </section>
+  </main>
+</body>
+
+</html>

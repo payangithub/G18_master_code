@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body{
+  background-color: white;
+}
+
+.container2 {
+  height: 50px;
+  display: flex;
+}
+
+.img-logo {
+  margin-top: 5px;
+}
+
+.link {
+  margin: 15px 5px;
+}
+
+a{
+  padding: 6px;
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+  color: black;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.link-active {
+  background-color: black;
+  color: white !important;
+  border-radius: 10px;
+}
+
+#search{
+  margin: 10px 5px;
+}
+
+#search-box{
+  border-radius: 10px;
+  padding: 5px 15px;
+  background-color: #efefef;
+  border-color: transparent;
+}
+
+.icon-header {
+  margin: 12px 0 10px 15px;
+}
+
+.icon{
+  fill: gray;
+}
+
+
+.wrapper-card {
+  padding: 1rem;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+  justify-content: center;
+  grid-template-rows: masonry;
+  gap: 0.5rem;
+}
+
+.card {
+  width: 236px;
+  height: 450px;
+  border-radius: 15px;
+  margin: 2vw;
+  position: relative;
+}
+
+.card img {
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-radius: inherit;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-out;
+}
+
+.card:hover::before {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.card:hover button {
+  display: inline-flex;
+}
+
+.card:hover .lowermenu {
+  display: flex;
+}
+
+.card:nth-child(3n) {
+  height: 555px;
+}
+
+.card:nth-child(2n + 2) {
+  height: 366px;
+}
+
+.card:nth-child(5n) {
+  height: 400px;
+}
+
+/* menu superior de la carta */
+.menu-superior {
+  position: absolute;
+  color: white;
+  background-color: red;
+  padding: 10px;
+  border-radius: 25px;
+  top: 15px;
+  right: 10px;
+  border-style: none;
+  display: none;
+}
+
+/* menu inferior de la carta */
+
+.lowermenu {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 10px;
+  border-style: none;
+  text-decoration: none;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: none;
+}
+
+.lowermenu ion-icon {
+  background-color: lightgray;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.lowermenu button {
+  padding: 10px;
+  background-color: lightgray;
+  text-decoration: none;
+  border-radius: 15px;
+  border-style: none;
+}
+
+.lowermenu button a {
+  text-decoration: none;
+  border-style: none;
+  color: white;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (min-width: 992px) {
+  #search-box {
+    width: 60vw;
+  }
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (min-width: 1200px) {
+  #search-box {
+    width: 70vw;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 991px) {
+  #search-box {
+    width: 55vw;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  #search {
+    display: none;
+  }
+  .card {
+    width: 90%;
+  }
+}
